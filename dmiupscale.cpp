@@ -44,8 +44,8 @@ int main(int argc, char *argv[])
 	unsigned long newwidth, newheight;
 	newwidth = width*2;
 	newheight = height*2;
-	unsigned long l = width * width;
-	unsigned long nl = newwidth * newwidth;
+	unsigned long l = width * height;
+	unsigned long nl = newwidth * newheight;
 	vector<unsigned char> newpng;
 	newpng.resize(nl*PIXEL_SIZE);
 	unsigned long i = 0; 
